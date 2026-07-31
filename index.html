@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>8–9 maggio 2027 · Pieve Santo Stefano</title>
+<meta name="description" content="Tutte le informazioni per la festa dell'8 e 9 maggio 2027 a Pieve Santo Stefano.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,400..700&family=Archivo:wght@400;500;600&family=Caveat:wght@400;600&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --carta:#e9e7dc;
+  --carta-alt:#e2e0d3;
+  --inchiostro:#1f2a33;
+  --inchiostro-soft:#5a6670;
+  --rigo:#c9c5b4;
+  --margine:#9e2b25;
+  --penna:#33568c;
+  --ocra:#c98a2e;
+  --misura:34rem;
+}
+
+*{box-sizing:border-box}
+
+html{-webkit-text-size-adjust:100%}
+
+body{
+  margin:0;
+  background:var(--carta);
+  color:var(--inchiostro);
+  font-family:"Archivo",system-ui,sans-serif;
+  font-size:17px;
+  line-height:1.65;
+  background-image:repeating-linear-gradient(
+    to bottom,
+    transparent 0,
+    transparent 33px,
+    var(--rigo) 33px,
+    var(--rigo) 34px
+  );
+  background-position:0 6px;
+}
+
+/* ---------- impaginato: il rigo rosso del quaderno ---------- */
+
+.foglio{
+  max-width:46rem;
+  margin:0 auto;
+  padding:0 1.4rem 5rem 2.6rem;
+  position:relative;
+}
+
+.foglio::before{
+  content:"";
+  position:absolute;
+  top:0; bottom:0; left:1.15rem;
+  width:1px;
+  background:var(--margine);
+  opacity:.55;
+}
+
+/* ---------- tipografia ---------- */
+
+h1,h2,h3{font-family:"Fraunces",Georgia,serif;font-weight:600;margin:0}
+
+h1{
+  font-size:clamp(2.9rem,12vw,5.2rem);
+  line-height:.92;
+  font-variation-settings:"SOFT" 20,"WONK" 1;
+  letter-spacing:-.02em;
+}
+
+h2{
+  font-size:clamp(1.5rem,5vw,2.1rem);
+  line-height:1.1;
+  margin-bottom:.2rem;
+  letter-spacing:-.01em;
+}
+
+h3{
+  font-size:1.1rem;
+  font-weight:600;
+  margin-bottom:.15rem;
+}
+
+p{margin:0 0 1.05rem;max-width:var(--misura)}
+
+a{color:var(--penna);text-decoration-thickness:1px;text-underline-offset:2px}
+a:hover{color:var(--margine)}
+a:focus-visible{outline:2px solid var(--margine);outline-offset:3px;border-radius:2px}
+
+.occhiello{
+  font-family:"Archivo",sans-serif;
+  font-size:.72rem;
+  font-weight:600;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+  color:var(--inchiostro-soft);
+  margin:0 0 1.1rem;
+}
+
+.mano{
+  font-family:"Caveat",cursive;
+  font-size:1.5rem;
+  line-height:1.25;
+  color:var(--margine);
+}
+
+.nota{
+  font-size:.88rem;
+  color:var(--inchiostro-soft);
+  max-width:var(--misura);
+}
+
+/* ---------- apertura ---------- */
+
+.apertura{
+  padding:5rem 0 3.5rem;
+}
+
+.data-grande{
+  font-family:"Fraunces",serif;
+  font-size:clamp(1.15rem,4.5vw,1.6rem);
+  font-weight:500;
+  font-style:italic;
+  color:var(--margine);
+  margin:0 0 .5rem;
+}
+
+.apertura h1{margin-bottom:.9rem}
+
+.luogo{
+  font-size:1.02rem;
+  font-weight:500;
+  letter-spacing:.02em;
+  margin-bottom:2rem;
+}
+
+.tesi{
+  font-family:"Fraunces",serif;
+  font-size:1.12rem;
+  font-style:italic;
+  line-height:1.55;
+  color:var(--inchiostro);
+  border-left:2px solid var(--ocra);
+  padding-left:1rem;
+  max-width:30rem;
+}
+
+/* ---------- sezioni ---------- */
+
+section{
+  padding:2.6rem 0;
+  border-top:1px solid rgba(31,42,51,.14);
+}
+
+.sezione-testa{margin-bottom:1.5rem}
+
+.voce{
+  margin-bottom:1.6rem;
+  max-width:var(--misura);
+}
+
+.voce:last-child{margin-bottom:0}
+
+.voce p{margin-bottom:.35rem}
+
+.dettaglio{
+  font-size:.9rem;
+  color:var(--inchiostro-soft);
+  margin:0;
+}
+
+/* ---------- programma ---------- */
+
+.ora{
+  font-family:"Fraunces",serif;
+  font-size:.95rem;
+  font-weight:600;
+  font-variant-numeric:tabular-nums;
+  color:var(--margine);
+  display:block;
+}
+
+.giorno{
+  margin-bottom:2.2rem;
+}
+
+.giorno:last-child{margin-bottom:0}
+
+.giorno-titolo{
+  font-family:"Fraunces",serif;
+  font-size:1.25rem;
+  font-weight:600;
+  font-style:italic;
+  margin:0 0 .9rem;
+  padding-bottom:.4rem;
+  border-bottom:1px dotted rgba(31,42,51,.3);
+  max-width:var(--misura);
+}
+
+/* ---------- temperature ---------- */
+
+.meteo{
+  display:flex;
+  flex-wrap:wrap;
+  gap:.9rem;
+  margin:0 0 1.1rem;
+  padding:0;
+  list-style:none;
+  max-width:var(--misura);
+}
+
+.meteo li{
+  flex:1 1 8rem;
+  background:var(--carta-alt);
+  border:1px solid rgba(31,42,51,.13);
+  border-radius:2px;
+  padding:.75rem .85rem;
+}
+
+.meteo .etichetta{
+  display:block;
+  font-size:.68rem;
+  font-weight:600;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  color:var(--inchiostro-soft);
+  margin-bottom:.15rem;
+}
+
+.meteo .valore{
+  font-family:"Fraunces",serif;
+  font-size:1.55rem;
+  font-weight:600;
+  font-variant-numeric:tabular-nums;
+  line-height:1.1;
+}
+
+/* ---------- chiusura / rsvp ---------- */
+
+.chiusura{
+  background:var(--carta-alt);
+  border:1px solid rgba(158,43,37,.3);
+  border-radius:2px;
+  padding:1.7rem 1.5rem;
+  margin-top:1rem;
+  max-width:var(--misura);
+}
+
+.chiusura h2{margin-bottom:.6rem}
+
+.bottone{
+  display:inline-block;
+  margin-top:.5rem;
+  padding:.7rem 1.4rem;
+  background:var(--margine);
+  color:var(--carta);
+  font-weight:600;
+  font-size:.95rem;
+  letter-spacing:.02em;
+  text-decoration:none;
+  border-radius:2px;
+}
+
+.bottone:hover{background:var(--inchiostro);color:var(--carta)}
+
+.firma{
+  margin-top:3rem;
+  text-align:right;
+  padding-right:.5rem;
+}
+
+.firma .mano{font-size:1.8rem}
+
+/* ---------- selettore lingua ---------- */
+
+.lingue{
+  padding:1.4rem 0 0;
+  font-size:.75rem;
+  font-weight:600;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+}
+
+.lingue a,.lingue span{
+  color:var(--inchiostro-soft);
+  text-decoration:none;
+  padding-right:.55rem;
+  margin-right:.45rem;
+  border-right:1px solid rgba(31,42,51,.25);
+}
+
+.lingue a:last-child,.lingue span:last-child{
+  border-right:0;
+  margin-right:0;
+  padding-right:0;
+}
+
+.lingue a:hover{color:var(--margine)}
+.lingue .attiva{color:var(--margine)}
+
+/* ---------- da completare ---------- */
+
+.tbd{
+  background:rgba(201,138,46,.28);
+  border-bottom:1px dashed var(--ocra);
+  padding:0 .18em;
+  font-style:normal;
+}
+
+/* ---------- animazione d'ingresso ---------- */
+
+@keyframes entra{
+  from{opacity:0;transform:translateY(10px)}
+  to{opacity:1;transform:none}
+}
+
+.apertura > *{
+  animation:entra .7s cubic-bezier(.2,.7,.3,1) backwards;
+}
+.apertura > *:nth-child(1){animation-delay:.05s}
+.apertura > *:nth-child(2){animation-delay:.15s}
+.apertura > *:nth-child(3){animation-delay:.28s}
+.apertura > *:nth-child(4){animation-delay:.4s}
+.apertura > *:nth-child(5){animation-delay:.52s}
+
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{
+    animation-duration:.01ms !important;
+    animation-iteration-count:1 !important;
+    transition-duration:.01ms !important;
+  }
+}
+
+/* ---------- schermi larghi: marginalia ---------- */
+
+@media (min-width:56rem){
+  .foglio{
+    max-width:58rem;
+    padding-left:12rem;
+  }
+  .foglio::before{left:10.5rem}
+  .marginalia{
+    position:absolute;
+    left:0;
+    width:9.4rem;
+    text-align:right;
+    font-family:"Caveat",cursive;
+    font-size:1.22rem;
+    line-height:1.3;
+    color:var(--margine);
+    transform:rotate(-1.6deg);
+  }
+}
+
+@media (max-width:55.99rem){
+  .marginalia{
+    font-family:"Caveat",cursive;
+    font-size:1.35rem;
+    color:var(--margine);
+    display:block;
+    margin-bottom:.7rem;
+  }
+}
+</style>
+</head>
+
+<body>
+<main class="foglio">
+
+  <nav class="lingue" aria-label="Lingua">
+    <span class="attiva">Italiano</span><a href="fr/" hreflang="fr">Français</a>
+  </nav>
+
+  <header class="apertura">
+    <p class="occhiello">Vi aspettiamo</p>
+    <p class="data-grande">sabato 8 e domenica 9 maggio 2027</p>
+    <h1>Dieci<br>anni</h1>
+    <p class="luogo">Pieve Santo Stefano — Valtiberina, Arezzo</p>
+    <p class="tesi">Qui c'è un archivio dove la gente porta i propri diari perché non vadano perduti. Ci è sembrato il posto giusto per festeggiare dieci anni della nostra storia — e per aggiungerci due giorni con voi.</p>
+  </header>
+
+  <section id="programma">
+    <div class="sezione-testa">
+      <p class="occhiello">Il programma</p>
+      <h2>Due giorni, senza fretta</h2>
+    </div>
+
+    <div class="giorno">
+      <p class="giorno-titolo">Sabato 8 maggio</p>
+      <div class="voce">
+        <span class="ora"><span class="tbd">ore 00:00</span></span>
+        <h3>Arrivo e benvenuto</h3>
+        <p class="dettaglio">Ci si trova, si posano le valigie, si beve qualcosa.</p>
+      </div>
+      <div class="voce">
+        <span class="ora"><span class="tbd">ore 00:00</span></span>
+        <h3>Cena</h3>
+        <p class="dettaglio"><span class="tbd">Due righe su dove e com'è: all'aperto, seduti, buffet…</span></p>
+      </div>
+      <div class="voce">
+        <span class="ora"><span class="tbd">ore 00:00</span></span>
+        <h3>Musica</h3>
+        <p class="dettaglio"><span class="tbd">Fino a tardi, o fino a quando reggiamo.</span></p>
+      </div>
+    </div>
+
+    <div class="giorno">
+      <p class="giorno-titolo">Domenica 9 maggio</p>
+      <div class="voce">
+        <span class="ora"><span class="tbd">ore 00:00</span></span>
+        <h3>Colazione lunga</h3>
+        <p class="dettaglio">Per chi si ferma a dormire. Nessun orario da rispettare.</p>
+      </div>
+      <div class="voce">
+        <span class="ora"><span class="tbd">ore 00:00</span></span>
+        <h3>Pranzo e saluti</h3>
+        <p class="dettaglio"><span class="tbd">Dove e fino a che ora.</span></p>
+      </div>
+    </div>
+  </section>
+
+  <section id="arrivare">
+    <p class="marginalia">L'ultimo tratto è<br>tutto curve — <br>calcolate largo</p>
+    <div class="sezione-testa">
+      <p class="occhiello">Come arrivare</p>
+      <h2>In macchina, praticamente sempre</h2>
+    </div>
+
+    <p>Pieve Santo Stefano è in Valtiberina, sull'Appennino tra Toscana, Umbria e Romagna. Si arriva dalla superstrada <strong>E45</strong>, uscita Pieve Santo Stefano.</p>
+
+    <div class="voce">
+      <h3>Indirizzo della festa</h3>
+      <p><span class="tbd">Nome del posto, via e numero, Pieve Santo Stefano (AR)</span></p>
+      <p class="dettaglio"><a href="#" rel="noopener"><span class="tbd">Aprilo su Google Maps →</span></a></p>
+    </div>
+
+    <div class="voce">
+      <h3>Tempi indicativi</h3>
+      <p class="dettaglio">Arezzo ~50 min · Firenze ~1h45 · Perugia ~1h15 · Rimini ~1h45 · Roma ~3h</p>
+    </div>
+
+    <div class="voce">
+      <h3>In treno</h3>
+      <p class="dettaglio">Non c'è stazione a Pieve. Le più vicine sono <strong>Sansepolcro</strong> (~17 km) e <strong>Arezzo</strong> (~45 km): scriveteci e organizziamo un passaggio.</p>
+    </div>
+  </section>
+
+  <section id="parcheggio">
+    <div class="sezione-testa">
+      <p class="occhiello">Parcheggio</p>
+      <h2>Dove lasciare la macchina</h2>
+    </div>
+
+    <p><span class="tbd">Indicazione precisa: c'è un piazzale, si parcheggia lungo la strada, ci sono posti riservati…</span></p>
+    <p class="nota">Se venite dalla stessa città, mettetevi d'accordo e viaggiate insieme: strada più bella e un problema in meno all'arrivo.</p>
+  </section>
+
+  <section id="dormire">
+    <p class="marginalia">Prenotate presto:<br>a maggio qui<br>si riempie</p>
+    <div class="sezione-testa">
+      <p class="occhiello">Dove dormire</p>
+      <h2>Fermatevi la notte</h2>
+    </div>
+
+    <p>La festa è di sabato sera e la domenica si continua con calma: consigliamo davvero di dormire in zona invece di rimettersi in macchina.</p>
+
+    <div class="voce">
+      <h3>A Pieve Santo Stefano</h3>
+      <p><span class="tbd">Nome struttura — telefono — a che distanza dalla festa</span></p>
+      <p class="dettaglio"><span class="tbd">Se avete bloccato delle camere, scrivete qui il nome da citare per la prenotazione.</span></p>
+    </div>
+
+    <div class="voce">
+      <h3>Agriturismi in Valtiberina</h3>
+      <p><span class="tbd">Uno o due nomi con link</span></p>
+      <p class="dettaglio">Ce ne sono molti tra Pieve, Caprese Michelangelo e Sansepolcro: se siete un gruppo, un casale intero conviene.</p>
+    </div>
+
+    <div class="voce">
+      <h3>Sansepolcro e Anghiari</h3>
+      <p class="dettaglio">A 15–25 minuti di macchina, con più scelta di alberghi e B&amp;B. Anghiari è uno dei borghi più belli d'Italia: dormirci è un piccolo regalo che vi fate.</p>
+    </div>
+  </section>
+
+  <section id="visitare">
+    <div class="sezione-testa">
+      <p class="occhiello">Se restate</p>
+      <h2>Cosa c'è intorno</h2>
+    </div>
+
+    <p>La Valtiberina è una delle zone meno battute della Toscana, il che è esattamente il suo pregio. Se arrivate il venerdì o ripartite il lunedì, qui c'è di che riempire due o tre giornate. Abbiamo diviso per gusti.</p>
+
+    <p class="giorno-titolo">Per la cultura</p>
+
+    <div class="voce">
+      <h3>Il Piccolo Museo del Diario — Pieve Santo Stefano</h3>
+      <p class="dettaglio">Nel paese stesso. Pieve è la "città del diario": custodisce l'Archivio Diaristico Nazionale, migliaia di diari, lettere e memorie di persone comuni. Il museo li racconta con installazioni sonore, si visita in un'ora ed è la cosa più bella del paese. Se venite qui, venite qui.</p>
+    </div>
+
+    <p class="giorno-titolo">Per chi ama l'arte</p>
+
+    <div class="voce">
+      <h3>Piero della Francesca, in tre tappe</h3>
+      <p class="dettaglio">La Valtiberina è casa sua, e le sue opere si vedono ancora dove le ha dipinte.</p>
+      <p class="dettaglio"><strong>Sansepolcro</strong> (~17 km) — la sua città natale. Al Museo Civico c'è la <em>Resurrezione</em>: da sola vale il viaggio.</p>
+      <p class="dettaglio"><strong>Monterchi</strong> (~35 km) — la <em>Madonna del Parto</em>, in un museo tutto suo. Un'opera sola, e un'ora di silenzio.</p>
+      <p class="dettaglio"><strong>Arezzo</strong> (~45 km) — il ciclo della <em>Leggenda della Vera Croce</em> nella Basilica di San Francesco. Prenotazione obbligatoria, fatela per tempo.</p>
+      <p class="dettaglio">In una giornata si fanno tutte e tre, ma è una giornata piena.</p>
+    </div>
+
+    <div class="voce">
+      <h3>Burri — Città di Castello (~30 km)</h3>
+      <p class="dettaglio">Il salto dal Quattrocento al contemporaneo, a mezz'ora di macchina. Due sedi: Palazzo Albizzini in centro, e soprattutto gli <strong>Ex Seccatoi del Tabacco</strong>, capannoni industriali neri che ospitano i cicli monumentali. Impressionante anche per chi non ama l'arte contemporanea.</p>
+    </div>
+
+    <div class="voce">
+      <h3>Firenze (~1h45)</h3>
+      <p class="dettaglio">Lontana per una gita in giornata dalla festa, ma perfetta se allungate di qualche giorno prima o dopo.</p>
+    </div>
+
+    <p class="giorno-titolo">Per la natura</p>
+
+    <div class="voce">
+      <h3>Monte Fumaiolo e le sorgenti del Tevere (~50 min)</h3>
+      <p class="dettaglio">A 1400 metri, dove nasce il Tevere. Si arriva quasi in cima in macchina e si cammina poco per vedere la sorgente. Nelle giornate limpide la vista arriva lontanissimo. Portate qualcosa di caldo: lassù a maggio fa freddo davvero.</p>
+    </div>
+
+    <div class="voce">
+      <h3>Foreste Casentinesi e Camaldoli (~1h15)</h3>
+      <p class="dettaglio">Una delle faggete più belle d'Europa, dentro il parco nazionale. Il monastero e l'eremo di Camaldoli sono immersi nel bosco. Molti sentieri, tutti facili, tutti bellissimi a maggio.</p>
+    </div>
+
+    <div class="voce">
+      <h3>Santuario della Verna (~30 km)</h3>
+      <p class="dettaglio">Il luogo delle stimmate di San Francesco, a 1100 metri, su uno strapiombo dentro una faggeta. Anche senza interesse religioso, il posto fa impressione. Sta a metà strada verso Camaldoli: si possono unire.</p>
+    </div>
+
+    <div class="voce">
+      <h3>Alpe della Luna (~30 km)</h3>
+      <p class="dettaglio">Riserva naturale sopra Sansepolcro, sul crinale tra Toscana, Marche e Romagna. Selvaggia e poco frequentata: se cercate una camminata vera senza incontrare nessuno, è qui.</p>
+    </div>
+
+    <div class="voce">
+      <h3>Lago di Montedoglio (~15 km)</h3>
+      <p class="dettaglio">Se volete qualcosa di facile: passeggiate sulle rive e sport d'acqua, senza dislivelli.</p>
+    </div>
+  </section>
+
+  <section id="tempo">
+    <div class="sezione-testa">
+      <p class="occhiello">Che tempo fa</p>
+      <h2>Maggio in Valtiberina</h2>
+    </div>
+
+    <p>Siamo a circa 430 metri, in mezzo all'Appennino: le giornate sono miti ma <strong>la sera si scende parecchio</strong>. Valori tipici del periodo, non una previsione.</p>
+
+    <ul class="meteo">
+      <li><span class="etichetta">Di giorno</span><span class="valore">21–24°</span></li>
+      <li><span class="etichetta">La sera</span><span class="valore">12–14°</span></li>
+      <li><span class="etichetta">La notte</span><span class="valore">8–11°</span></li>
+    </ul>
+
+    <div class="voce">
+      <h3>Cosa mettere in valigia</h3>
+      <p class="dettaglio">Qualcosa di caldo per la sera, sempre: è la cosa che tutti dimenticano. Scarpe comode se pensate di girare per i borghi, che sono tutti in salita. E a maggio un temporale ci sta: un impermeabile leggero non occupa spazio.</p>
+    </div>
+  </section>
+
+  <section id="rsvp">
+    <div class="chiusura">
+      <p class="occhiello">Fateci sapere</p>
+      <h2>Ci siete?</h2>
+      <p>Rispondete entro il <strong><span class="tbd">— —— 2027</span></strong>, così sappiamo quanti siamo a tavola e quante camere servono.</p>
+      <p class="dettaglio">Diteci anche se vi fermate a dormire e se avete esigenze alimentari.</p>
+      <p><a class="bottone" href="mailto:?subject=Ci%20siamo!"><span class="tbd">Scriveteci</span></a></p>
+      <p class="dettaglio" style="margin-top:.9rem">Oppure un messaggio a <span class="tbd">nome — numero di telefono</span></p>
+    </div>
+
+    <p class="firma"><span class="mano">A presto —<br><span class="tbd">i vostri nomi</span></span></p>
+  </section>
+
+</main>
+</body>
+</html>
